@@ -22,3 +22,10 @@ function toUnderscore(string) {
 }
 
 toUnderscore('A123aaa123AAA123');
+
+// pigeon solution:
+var toUnderscore;
+
+toUnderscore = function(string) {
+  return string.toString().split(/(?=[A-Z])/).join('_').toLowerCase();
+};
